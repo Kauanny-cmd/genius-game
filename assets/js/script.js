@@ -27,7 +27,7 @@ let lightColor = (element, number) =>{
     number = number * 500
     setTimeout(() =>{
         element.classList.add('selected')
-    }, number - 250)
+    }, number - 250);
 
     setTimeout(() => {
         element.classList.remove('selected')
@@ -52,10 +52,8 @@ let click = (color) =>{
     createColorElement(color).classList.add('selected')
 
     setTimeout(() => {
-        createColorElement(color).classList.remove('selected') 
-    });
-
-    checkOrder()
+        createColorElement(color).classList.remove('selected');checkOrder()
+    }, 250);
 }
 
 let createColorElement = (color) =>{
@@ -90,7 +88,9 @@ let playGame = () =>{
     nextLevel()
 }
 
-green.addEventListener('click', click(0))
-red.addEventListener('click', click(1))
-yellow.addEventListener('click', click(2))
-blue.addEventListener('click', click(3))
+green.onclick = () => (click(0))
+red.onclick = () => (click(1))
+yellow.onclick = () => (click(2))
+blue.aonclick = () => (click(3))
+
+playGame()
