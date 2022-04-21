@@ -33,3 +33,16 @@ let lightColor = (element, number) =>{
         element.classList.remove('selected')
     });
 }
+
+let checkOrder = () =>{
+    for(let i in clickOrder){
+        if(clickOrder[i] != order[i]){
+            lose();
+            break;
+        }
+    }
+    if(clickOrder.length == order.length){
+        alert(`Pontuação: ${score}\n Você acertou! Iniciando o próximo nível!`)
+        nextLevel()
+    }
+}
