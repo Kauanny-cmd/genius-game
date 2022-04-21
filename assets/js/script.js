@@ -75,3 +75,10 @@ let nextLevel = () =>{
     shuffleOrder()
 }
 
+let lose = () =>{
+    alert(`Pontuação: ${score}\n Você perdeu o jogo!\n Click para iniciar novamente`)
+    order = []
+    clickOrder = []
+
+    playGame()
+}
