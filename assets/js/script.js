@@ -82,3 +82,10 @@ let lose = () =>{
 
     playGame()
 }
+
+let playGame = () =>{
+    alert('Bem vindo ao Genius! Iniciando jogo')
+    score = 0
+
+    nextLevel()
+}
