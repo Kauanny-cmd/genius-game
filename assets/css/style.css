@@ -18,10 +18,34 @@ body{
     display: grid;
     grid-template-areas: 'green red'
     'yellow blue';
-    grid-gap: 10px;
+    grid-gap: 7px;
     border: 1px solid #fff;
     background-color: #fff;
     border-radius: 100%;
     width: 700px;
     height: 700px;
+}
+
+.blue{
+    background-color: #0000ffe3;
+    grid-area: blue;
+    border-bottom-right-radius: 100%;
+}
+
+.red{
+    grid-area: red;
+    background-color: #ff0000ee;
+    border-top-right-radius: 100%;
+}
+
+.yellow{
+    grid-area: yellow;
+    background-color: #ffff00ef;
+    border-bottom-left-radius: 100%;
+}
+
+.green{
+    grid-area: green;
+    background-color: #008000ea;
+    border-top-left-radius: 100%;
 }
